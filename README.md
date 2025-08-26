@@ -1,4 +1,4 @@
-# Python Introduction Exercises
+# Course 1 Python Introduction Exercises
 
 ## 📌 Exercise 1: Introducing Python
 Python adalah bahasa pemrograman tingkat tinggi (*high-level*) dan bersifat *general-purpose*.  
@@ -64,7 +64,7 @@ Tujuan program ini adalah untuk memastikan Python terinstall dan berjalan dengan
 🎉 **Selamat!** Kamu telah berhasil menulis program Python pertamamu.
 
 ----------------------------------------------------------------
-# Working with Numeric Data Types
+# Course 2 Working with Numeric Data Types
 
 ## Lab overview
 Python makes it easier to do math. In fact, Python is a popular language among data scientists, who must analyze large amounts of data. In this lab, you will explore the basic data types that are used to store numeric values.

@@ -282,134 +282,101 @@ You have learned about Python’s three numeric data types: **int, float, and co
 
 -----------------------------------
 
-# Course 3 Lab: Working with the String Data Type di Python
+# Course 3 Working with the String Data Type
 
-## Overview
-Lab ini bertujuan untuk mengenalkan penggunaan **tipe data string** dalam bahasa pemrograman Python. String adalah sekumpulan huruf dan simbol yang sering digunakan untuk input dan output dalam Python. Di dalam lab ini, Anda akan belajar:
+````markdown
+# Python String Data Type Exercises
 
-- Menulis kode Python menggunakan tipe data string
-- Menggabungkan (concatenate) string
-- Mengambil input dari pengguna menggunakan string
-- Memformat string untuk output
+## Exercise 1: Introducing the string data type
 
-***
+In this exercise, you learned how to create a Python script, declare a string variable, and print it.
 
-## Estimasi Waktu Penyelesaian
-45 menit
+```python
+myString = "This is a string."
+print(myString)
+print(type(myString))
+print(myString + " is of the data type " + str(type(myString)))
+````
 
-***
+**Expected Output:**
 
-## Cara Mengakses AWS Cloud9 IDE
-1. Buka instruksi lab dan pilih **Start Lab**.
-2. Tunggu hingga status lab muncul **Lab status: ready**.
-3. Tutup panel **Start Lab** dengan menekan tombol **X**.
-4. Di bagian atas instruksi, pilih **AWS** untuk membuka AWS Management Console di tab baru.
-   - Jika tab baru tidak muncul, izinkan pop-up di browser Anda.
-5. Di AWS Console, pilih **Services > Cloud9**.
-6. Cari lingkungan `reStart-python-cloud9` dan klik **Open IDE**.
-7. Jika muncul pesan `.c9/project.settings have been changed on disk`, pilih **Discard**.
-8. Jika muncul dialog **Show third-party content**, pilih **No**.
+```
+This is a string.
+<class 'str'>
+This is a string. is of the data type <class 'str'>
+```
 
-***
+---
 
-## Membuat File Latihan Python
-1. Dari menu bar, pilih **File > New From Template > Python File**.
-2. Hapus kode sampel yang muncul otomatis.
-3. Simpan file dengan nama, misalnya, `string-data-type.py` di folder `/home/ec2-user/environment`.
+## Exercise 2: Working with string concatenation
 
-***
+You combined two strings using the `+` operator.
 
-## Membuka Terminal di Cloud9
-1. Klik ikon **+** di IDE, kemudian pilih **New Terminal**.
-2. Ketik perintah `pwd` untuk memastikan Anda berada di direktori `/home/ec2-user/environment`.
-3. Pastikan file Python Anda ada di direktori ini.
+```python
+firstString = "water"
+secondString = "fall"
+thirdString = firstString + secondString
+print(thirdString)
+```
 
-***
+**Expected Output:**
 
-## Exercise 1: Memperkenalkan Tipe Data String
+```
+waterfall
+```
 
-- Ketik kode berikut di file Python Anda:
-  ```python
-  myString = "This is a string."
-  print(myString)
-  ```
-- Simpan dan jalankan file tersebut.
-- Output yang terlihat seharusnya:
-  ```
-  This is a string.
-  ```
-- Tambahkan kode berikut untuk mengetahui tipe data variabel:
-  ```python
-  print(type(myString))
-  print(myString + " is of the data type " + str(type(myString)))
-  ```
-- Simpan dan jalankan kembali.
-- Output yang diharapkan:
-  ```
-  This is a string.
-  <class 'str'>
-  This is a string. is of the data type <class 'str'>
-  ```
+---
 
-***
+## Exercise 3: Working with input strings
 
-## Exercise 2: Bekerja dengan Penggabungan String
+You used the `input()` function to get user input.
 
-- Tambahkan kode berikut:
-  ```python
-  firstString = "water"
-  secondString = "fall"
-  thirdString = firstString + secondString
-  print(thirdString)
-  ```
-- Simpan dan jalankan file.
-- Output yang diharapkan:
-  ```
-  waterfall
-  ```
+```python
+name = input("What is your name? ")
+print(name)
+```
 
-***
+**Expected Output:**
 
-## Exercise 3: Bekerja dengan Input String
+```
+What is your name? Maria
+Maria
+```
 
-- Tambahkan kode untuk mengambil input nama pengguna:
-  ```python
-  name = input("What is your name? ")
-  print(name)
-  ```
-- Simpan dan jalankan, masukkan nama saat diminta.
-- Contoh output:
-  ```
-  What is your name? Maria
-  Maria
-  ```
+---
 
+## Exercise 4: Formatting output strings
 
-## Exercise 4: Memformat Output String
+You created a formatted string with multiple user inputs.
 
-- Tambahkan kode berikut untuk mengambil input warna dan hewan favorit dan menampilkan output terformat:
-  ```python
-  color = input("What is your favorite color?  ")
-  animal = input("What is your favorite animal?  ")
-  print("{}, you like a {} {}!".format(name, color, animal))
-  ```
-- Simpan dan jalankan file.
-- Masukkan nama, warna, dan hewan sesuai instruksi, contoh output:
-  ```
-  What is your name? Maria
-  What is your favorite color? blue
-  What is your favorite animal? dog
-  Maria, you like a blue dog!
-  ```
+```python
+color = input("What is your favorite color?  ")
+animal = input("What is your favorite animal?  ")
+print("{}, you like a {} {}!".format(name,color,animal))
+```
 
+**Expected Output:**
 
-## Ringkasan
-Anda telah berhasil:
+```
+What is your favorite color?  blue
+What is your favorite animal?  dog
+Maria, you like a blue dog!
+```
 
-- Membuat dan menampilkan string
-- Menggunakan fungsi `type()` untuk melihat tipe data
-- Menggabungkan string menggunakan operator `+`
-- Mengambil input string dari pengguna dengan fungsi `input()`
-- Memformat output string dengan `print()` dan `format()`
+---
 
-Selamat! Anda sudah memahami dasar penggunaan tipe data string di Python.
+## Summary
+
+In this lab, you have learned:
+
+* How to declare and print string variables.
+* How to concatenate strings using the `+` operator.
+* How to accept input from users with `input()`.
+* How to format strings with the `.format()` method.
+
+🎉 Congratulations, you completed the lab!
+
+```
+
+Mau saya bikinkan file **README.md** siap unduh (seperti sebelumnya), atau cukup kamu salin isi di atas langsung ke file?
+```

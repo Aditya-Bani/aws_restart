@@ -280,3 +280,136 @@ False is of the data type <class 'bool'>
 ## 🎉 Congratulations!
 You have learned about Python’s three numeric data types: **int, float, and complex**. Additionally, you were introduced to the Python fake data type that is called **bool**. Note that `bool` is actually the numerals `0` and `1`, which represent the values of `True` and `False`.
 
+-----------------------------------
+
+# Course 3 Lab: Working with the String Data Type di Python
+
+## Overview
+Lab ini bertujuan untuk mengenalkan penggunaan **tipe data string** dalam bahasa pemrograman Python. String adalah sekumpulan huruf dan simbol yang sering digunakan untuk input dan output dalam Python. Di dalam lab ini, Anda akan belajar:
+
+- Menulis kode Python menggunakan tipe data string
+- Menggabungkan (concatenate) string
+- Mengambil input dari pengguna menggunakan string
+- Memformat string untuk output
+
+***
+
+## Estimasi Waktu Penyelesaian
+45 menit
+
+***
+
+## Cara Mengakses AWS Cloud9 IDE
+1. Buka instruksi lab dan pilih **Start Lab**.
+2. Tunggu hingga status lab muncul **Lab status: ready**.
+3. Tutup panel **Start Lab** dengan menekan tombol **X**.
+4. Di bagian atas instruksi, pilih **AWS** untuk membuka AWS Management Console di tab baru.
+   - Jika tab baru tidak muncul, izinkan pop-up di browser Anda.
+5. Di AWS Console, pilih **Services > Cloud9**.
+6. Cari lingkungan `reStart-python-cloud9` dan klik **Open IDE**.
+7. Jika muncul pesan `.c9/project.settings have been changed on disk`, pilih **Discard**.
+8. Jika muncul dialog **Show third-party content**, pilih **No**.
+
+***
+
+## Membuat File Latihan Python
+1. Dari menu bar, pilih **File > New From Template > Python File**.
+2. Hapus kode sampel yang muncul otomatis.
+3. Simpan file dengan nama, misalnya, `string-data-type.py` di folder `/home/ec2-user/environment`.
+
+***
+
+## Membuka Terminal di Cloud9
+1. Klik ikon **+** di IDE, kemudian pilih **New Terminal**.
+2. Ketik perintah `pwd` untuk memastikan Anda berada di direktori `/home/ec2-user/environment`.
+3. Pastikan file Python Anda ada di direktori ini.
+
+***
+
+## Exercise 1: Memperkenalkan Tipe Data String
+
+- Ketik kode berikut di file Python Anda:
+  ```python
+  myString = "This is a string."
+  print(myString)
+  ```
+- Simpan dan jalankan file tersebut.
+- Output yang terlihat seharusnya:
+  ```
+  This is a string.
+  ```
+- Tambahkan kode berikut untuk mengetahui tipe data variabel:
+  ```python
+  print(type(myString))
+  print(myString + " is of the data type " + str(type(myString)))
+  ```
+- Simpan dan jalankan kembali.
+- Output yang diharapkan:
+  ```
+  This is a string.
+  <class 'str'>
+  This is a string. is of the data type <class 'str'>
+  ```
+
+***
+
+## Exercise 2: Bekerja dengan Penggabungan String
+
+- Tambahkan kode berikut:
+  ```python
+  firstString = "water"
+  secondString = "fall"
+  thirdString = firstString + secondString
+  print(thirdString)
+  ```
+- Simpan dan jalankan file.
+- Output yang diharapkan:
+  ```
+  waterfall
+  ```
+
+***
+
+## Exercise 3: Bekerja dengan Input String
+
+- Tambahkan kode untuk mengambil input nama pengguna:
+  ```python
+  name = input("What is your name? ")
+  print(name)
+  ```
+- Simpan dan jalankan, masukkan nama saat diminta.
+- Contoh output:
+  ```
+  What is your name? Maria
+  Maria
+  ```
+
+
+## Exercise 4: Memformat Output String
+
+- Tambahkan kode berikut untuk mengambil input warna dan hewan favorit dan menampilkan output terformat:
+  ```python
+  color = input("What is your favorite color?  ")
+  animal = input("What is your favorite animal?  ")
+  print("{}, you like a {} {}!".format(name, color, animal))
+  ```
+- Simpan dan jalankan file.
+- Masukkan nama, warna, dan hewan sesuai instruksi, contoh output:
+  ```
+  What is your name? Maria
+  What is your favorite color? blue
+  What is your favorite animal? dog
+  Maria, you like a blue dog!
+  ```
+
+
+## Ringkasan
+Anda telah berhasil:
+
+- Membuat dan menampilkan string
+- Menggunakan fungsi `type()` untuk melihat tipe data
+- Menggabungkan string menggunakan operator `+`
+- Mengambil input string dari pengguna dengan fungsi `input()`
+- Memformat output string dengan `print()` dan `format()`
+
+Selamat! Anda sudah memahami dasar penggunaan tipe data string di Python.

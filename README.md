@@ -375,3 +375,116 @@ In this lab, you have learned:
 * How to format strings with the `.format()` method.
 
 🎉 Congratulations, you completed the lab!
+-------
+#Course 4 Working with Lists, Tuples, and Dictionaries
+
+````markdown
+# Python List, Tuple, and Dictionary Exercises
+
+## Exercise 1: Introducing the List Data Type
+
+A list in Python is a collection of items stored in a single variable.
+
+```python
+myFruitList = ["apple", "banana", "cherry"]
+print(myFruitList)
+print(type(myFruitList))
+````
+
+**Expected Output:**
+
+```
+['apple', 'banana', 'cherry']
+<class 'list'>
+```
+
+### Accessing a list by position
+
+```python
+print(myFruitList[0])  # apple
+print(myFruitList[1])  # banana
+print(myFruitList[2])  # cherry
+```
+
+### Changing values in a list
+
+```python
+myFruitList[2] = "orange"
+print(myFruitList)
+```
+
+**Expected Output:**
+
+```
+['apple', 'banana', 'orange']
+```
+
+---
+
+## Exercise 2: Introducing the Tuple Data Type
+
+A tuple is like a list, but it cannot be changed (immutable).
+
+```python
+myFinalAnswerTuple = ("apple", "banana", "pineapple")
+print(myFinalAnswerTuple)
+print(type(myFinalAnswerTuple))
+```
+
+**Expected Output:**
+
+```
+('apple', 'banana', 'pineapple')
+<class 'tuple'>
+```
+
+### Accessing a tuple by position
+
+```python
+print(myFinalAnswerTuple[0])  # apple
+print(myFinalAnswerTuple[1])  # banana
+print(myFinalAnswerTuple[2])  # pineapple
+```
+
+---
+
+## Exercise 3: Introducing the Dictionary Data Type
+
+A dictionary stores data in key-value pairs.
+
+```python
+myFavoriteFruitDictionary = {
+  "Akua" : "apple",
+  "Saanvi" : "banana",
+  "Paulo" : "pineapple"
+}
+print(myFavoriteFruitDictionary)
+print(type(myFavoriteFruitDictionary))
+```
+
+**Expected Output:**
+
+```
+{'Akua': 'apple', 'Saanvi': 'banana', 'Paulo': 'pineapple'}
+<class 'dict'>
+```
+
+### Accessing a dictionary by key
+
+```python
+print(myFavoriteFruitDictionary["Akua"])    # apple
+print(myFavoriteFruitDictionary["Saanvi"])  # banana
+print(myFavoriteFruitDictionary["Paulo"])   # pineapple
+```
+
+---
+
+## Summary
+
+In this lab, you learned:
+
+* How to define and modify a **List**.
+* How to define and access elements in a **Tuple** (immutable).
+* How to define and retrieve values from a **Dictionary** (key-value pairs).
+
+🎉 Congratulations! You have successfully worked with **list, tuple, and dictionary data types** in Python.

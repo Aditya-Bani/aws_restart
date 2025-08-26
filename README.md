@@ -378,10 +378,6 @@ In this lab, you have learned:
 -------
 # Course 4 Working with Lists, Tuples, and Dictionaries
 
-Mantap 👍
-Berarti saya bikinkan isi **README.md** langsung dari teks yang kamu copy tadi, tanpa mengubah kata-kata.
-Berikut versi Markdown-nya:
-
 ````markdown
 # Python Data Types: List, Tuple, and Dictionary
 

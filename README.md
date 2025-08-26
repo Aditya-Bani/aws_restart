@@ -375,8 +375,3 @@ In this lab, you have learned:
 * How to format strings with the `.format()` method.
 
 🎉 Congratulations, you completed the lab!
-
-```
-
-Mau saya bikinkan file **README.md** siap unduh (seperti sebelumnya), atau cukup kamu salin isi di atas langsung ke file?
-```

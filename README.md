@@ -378,12 +378,19 @@ In this lab, you have learned:
 -------
 # Course 4 Working with Lists, Tuples, and Dictionaries
 
+Mantap 👍
+Berarti saya bikinkan isi **README.md** langsung dari teks yang kamu copy tadi, tanpa mengubah kata-kata.
+Berikut versi Markdown-nya:
+
 ````markdown
-# Python List, Tuple, and Dictionary Exercises
+# Python Data Types: List, Tuple, and Dictionary
 
-## Exercise 1: Introducing the List Data Type
+## Exercise 1: Defining a list
+In this activity, you will edit a Python script to hold a collection of fruit names, or a list of fruit.
 
-A list in Python is a collection of items stored in a single variable.
+From the navigation pane of the IDE, choose the .py file that you created in the previous Creating your Python exercise file section.
+
+In the file, enter the following code:
 
 ```python
 myFruitList = ["apple", "banana", "cherry"]
@@ -391,39 +398,76 @@ print(myFruitList)
 print(type(myFruitList))
 ````
 
-**Expected Output:**
+Save and run the file.
 
-```
-['apple', 'banana', 'cherry']
-<class 'list'>
-```
+Confirm that the script runs correctly and that the output displays as you expect it to.
 
 ### Accessing a list by position
 
+You can access the contents of a list by position. In this activity, you will print out each item in our list by their position:
+
+In programming languages, the list position starts at zero (0). The brackets tell Python which position in the list you want. To access the apple string, enter the following code:
+
 ```python
-print(myFruitList[0])  # apple
-print(myFruitList[1])  # banana
-print(myFruitList[2])  # cherry
+print(myFruitList[0])
 ```
 
-### Changing values in a list
+To access the banana string, enter the following:
+
+```python
+print(myFruitList[1])
+```
+
+To access the cherry string, enter the following code:
+
+```python
+print(myFruitList[2])
+```
+
+Save and run the file.
+
+Confirm that the script runs correctly and that the output displays as you expect it to.
+
+### Changing the values in a list
+
+The values of a list can be changed. In this activity, you will change cherry to orange.
+
+In Python, list position starts at zero (0), so you must use the numeral 2 to access the third position. Enter the following code:
 
 ```python
 myFruitList[2] = "orange"
+```
+
+Print the updated list:
+
+```python
 print(myFruitList)
 ```
+
+Save and run the file.
+
+Confirm that the script runs correctly and that the output displays as you expect it to.
 
 **Expected Output:**
 
 ```
+['apple', 'banana', 'cherry']                                
+<class 'list'>                                               
+apple                                                        
+banana                                                       
+cherry                                                       
 ['apple', 'banana', 'orange']
 ```
 
 ---
 
-## Exercise 2: Introducing the Tuple Data Type
+## Exercise 2: Introducing the tuple data type
 
-A tuple is like a list, but it cannot be changed (immutable).
+### Defining a tuple
+
+The tuple is like a list, but it can't be changed. A data type that can't be changed after it's created is said to be immutable. To define a tuple, you use parentheses instead of brackets (\[]).
+
+Create a tuple by entering the following code:
 
 ```python
 myFinalAnswerTuple = ("apple", "banana", "pineapple")
@@ -431,26 +475,63 @@ print(myFinalAnswerTuple)
 print(type(myFinalAnswerTuple))
 ```
 
-**Expected Output:**
+Save and run the file.
 
-```
-('apple', 'banana', 'pineapple')
-<class 'tuple'>
-```
+Confirm that the script runs correctly and that the output displays as you expect it to.
 
 ### Accessing a tuple by position
 
+Like a list, the items of a tuple can also be accessed by position:
+
+To access the apple string, enter the following code:
+
 ```python
-print(myFinalAnswerTuple[0])  # apple
-print(myFinalAnswerTuple[1])  # banana
-print(myFinalAnswerTuple[2])  # pineapple
+print(myFinalAnswerTuple[0])
+```
+
+To access the banana string, enter the following code:
+
+```python
+print(myFinalAnswerTuple[1])
+```
+
+To access the pineapple string, enter the following code:
+
+```python
+print(myFinalAnswerTuple[2])
+```
+
+Save and run the file.
+
+Near the top of the IDE window, choose the Run (Play) button.
+
+Confirm that the script runs correctly and that the output displays as you expect it to.
+
+**Expected Output:**
+
+```
+['apple', 'banana', 'cherry']                                
+<class 'list'>                                               
+apple                                                        
+banana                                                       
+cherry                                                       
+['apple', 'banana', 'orange']                                
+('apple', 'banana', 'pineapple')                             
+<class 'tuple'>                                              
+apple                                                        
+banana                                                       
+pineapple
 ```
 
 ---
 
-## Exercise 3: Introducing the Dictionary Data Type
+## Exercise 3: Introducing the dictionary data type
 
-A dictionary stores data in key-value pairs.
+### Defining a dictionary
+
+A dictionary is a list with named positions (keys). Imagine that your list shows people’s favorite fruit.
+
+Return to the Python script, and enter the following code:
 
 ```python
 myFavoriteFruitDictionary = {
@@ -458,33 +539,62 @@ myFavoriteFruitDictionary = {
   "Saanvi" : "banana",
   "Paulo" : "pineapple"
 }
+```
+
+Use the print() function to write the dictionary to the shell:
+
+```python
 print(myFavoriteFruitDictionary)
+```
+
+Use the type() function to write the data type to the shell:
+
+```python
 print(type(myFavoriteFruitDictionary))
 ```
+
+Save and run the file.
+
+Confirm that the script runs correctly and that the output displays as you expect it to.
+
+### Accessing a dictionary by name
+
+In this activity, you will use the name of the individuals to get their favorite fruit, instead of numbers.
+
+To access Akua's favorite fruit, enter the following code:
+
+```python
+print(myFavoriteFruitDictionary["Akua"])
+```
+
+To access Saanvi's favorite fruit, enter the following code:
+
+```python
+print(myFavoriteFruitDictionary["Saanvi"])
+```
+
+To access Paulo's favorite fruit, enter the following code:
+
+```python
+print(myFavoriteFruitDictionary["Paulo"])
+```
+
+Save and run the file.
+
+Confirm that the script runs correctly and that the output displays as you expect it to.
 
 **Expected Output:**
 
 ```
-{'Akua': 'apple', 'Saanvi': 'banana', 'Paulo': 'pineapple'}
-<class 'dict'>
-```
-
-### Accessing a dictionary by key
-
-```python
-print(myFavoriteFruitDictionary["Akua"])    # apple
-print(myFavoriteFruitDictionary["Saanvi"])  # banana
-print(myFavoriteFruitDictionary["Paulo"])   # pineapple
+{'Akua': 'apple', 'Saanvi': 'banana', 'Paulo': 'pineapple'}     
+<class 'dict'>                                               
+apple                                                        
+banana                                                       
+pineapple
 ```
 
 ---
 
-## Summary
+## Congratulations
 
-In this lab, you learned:
-
-* How to define and modify a **List**.
-* How to define and access elements in a **Tuple** (immutable).
-* How to define and retrieve values from a **Dictionary** (key-value pairs).
-
-🎉 Congratulations! You have successfully worked with **list, tuple, and dictionary data types** in Python.
+Congratulations! You have worked with the list, tuple, and dictionary data types in Python.

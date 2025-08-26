@@ -376,7 +376,7 @@ In this lab, you have learned:
 
 🎉 Congratulations, you completed the lab!
 -------
-#Course 4 Working with Lists, Tuples, and Dictionaries
+# Course 4 Working with Lists, Tuples, and Dictionaries
 
 ````markdown
 # Python List, Tuple, and Dictionary Exercises
